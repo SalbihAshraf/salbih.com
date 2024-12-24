@@ -1,2 +1,0 @@
-# salbih.com
-salbih.com
