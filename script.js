@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Project data
     const projects = [
         {
-            title: "Cosmic Defender",
-            description: "A space-themed roguelike shooter built with Unity. Features procedurally generated levels and dynamic difficulty scaling.",
-            image: "https://via.placeholder.com/600x400",
-            tags: ["Unity", "C#", "2D Graphics"]
+            title: "SalbihGame Revamped",
+            description: "Salbih tackles a new game dev project utilising his knowledge of online tutorials and personal coding expertise",
+            image: "Screenshot 2024-12-29 001234.jpg/600x400",
+            tags: ["Godot", "GDScript", "Pixel Art"]
         },
         {
             title: "Dungeon Delver",
