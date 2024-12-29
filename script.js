@@ -1,4 +1,3 @@
-// Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
     // Theme toggle setup
     const themeToggleBtn = document.getElementById('theme-toggle');
@@ -36,20 +35,23 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             title: "SalbihGame Revamped",
             description: "Salbih tackles a new game dev project utilising his knowledge of online tutorials and personal coding expertise",
-            image: "Screenshot 2024-12-29 001234.jpg/600x400",
-            tags: ["Godot", "GDScript", "Pixel Art"]
+            image: "Screenshot 2024-12-29 001234.jpg",
+            tags: ["Godot", "GDScript", "Pixel Art"],
+            link: "https://salbih.itch.io/salbihgame-revamped" // Replace with actual link
         },
         {
             title: "Dungeon Delver",
             description: "Top-down dungeon crawler with pixel art aesthetics. Implemented custom pathfinding and combat systems.",
             image: "https://via.placeholder.com/600x400",
-            tags: ["Godot", "GDScript", "Pixel Art"]
+            tags: ["Godot", "GDScript", "Pixel Art"],
+            link: "https://github.com/yourusername/dungeon-delver" // Replace with actual link
         },
         {
             title: "Speed Racer VR",
             description: "Virtual reality racing game with realistic physics and multiplayer support. Built for Meta Quest.",
             image: "https://via.placeholder.com/600x400",
-            tags: ["Unreal Engine", "C++", "VR"]
+            tags: ["Unreal Engine", "C++", "VR"],
+            link: "https://github.com/yourusername/speed-racer-vr" // Replace with actual link
         }
     ];
 
@@ -66,6 +68,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Render projects
     const projectsGrid = document.getElementById('projects-grid');
     projects.forEach(project => {
+        const projectWrapper = document.createElement('a');
+        projectWrapper.href = project.link;
+        projectWrapper.target = "_blank"; // Opens in new tab
+        projectWrapper.className = 'block transition-transform duration-300 hover:-translate-y-2';
+        
         const projectCard = document.createElement('div');
         projectCard.className = 'project-card';
         projectCard.innerHTML = `
@@ -85,7 +92,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </div>
         `;
-        projectsGrid.appendChild(projectCard);
+        projectWrapper.appendChild(projectCard);
+        projectsGrid.appendChild(projectWrapper);
     });
 
     // Render skills
