@@ -1,32 +1,52 @@
-/* Custom styles */
+/* Base styles */
 :root {
     --transition-duration: 0.3s;
 }
 
-* {
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: white;
+    color: #1a1a1a;
     transition: background-color var(--transition-duration) ease,
-                border-color var(--transition-duration) ease,
                 color var(--transition-duration) ease;
 }
 
-.dark {
-    --bg-card: rgb(17, 24, 39);
-    --text-primary: rgb(243, 244, 246);
-    --text-secondary: rgb(209, 213, 219);
+/* Dark mode styles */
+.dark body {
+    background-color: #111827;
+    color: #f3f4f6;
 }
 
+/* Theme toggle button */
+#theme-toggle {
+    cursor: pointer;
+    transition: background-color var(--transition-duration) ease,
+                border-color var(--transition-duration) ease;
+}
+
+#sun-icon,
+#moon-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Project card styles */
 .project-card {
     background: white;
     border-radius: 0.5rem;
     overflow: hidden;
-    height: 100%;
-    transition: all 0.3s ease;
-    border: 1px solid rgb(229, 231, 235);
+    border: 1px solid #e5e7eb;
+    transition: all var(--transition-duration) ease;
 }
 
 .dark .project-card {
-    background: var(--bg-card);
-    border-color: rgb(75, 85, 99);
+    background: #1f2937;
+    border-color: #374151;
 }
 
 .project-card:hover {
@@ -34,15 +54,11 @@
     box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1);
 }
 
-.dark .project-card:hover {
-    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.05);
-}
-
 .project-image {
     height: 200px;
     width: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform var(--transition-duration) ease;
 }
 
 .project-card:hover .project-image {
@@ -59,38 +75,40 @@
     gap: 0.5rem;
     font-size: 1.25rem;
     font-weight: bold;
-    color: rgb(37, 99, 235);
+    color: #2563eb;
     margin-bottom: 0.5rem;
 }
 
 .dark .project-title {
-    color: rgb(96, 165, 250);
+    color: #60a5fa;
 }
 
 .project-description {
-    color: rgb(107, 114, 128);
+    color: #6b7280;
     margin-bottom: 1rem;
 }
 
 .dark .project-description {
-    color: var(--text-secondary);
+    color: #d1d5db;
 }
 
+/* Tag styles */
 .tag {
     display: inline-block;
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-size: 0.875rem;
     background: rgba(59, 130, 246, 0.1);
-    color: rgb(37, 99, 235);
+    color: #2563eb;
     margin: 0.25rem;
 }
 
 .dark .tag {
     background: rgba(59, 130, 246, 0.05);
-    color: rgb(96, 165, 250);
+    color: #60a5fa;
 }
 
+/* Skill item styles */
 .skill-item {
     display: flex;
     align-items: center;
@@ -98,7 +116,7 @@
     padding: 1rem;
     border-radius: 0.5rem;
     background: rgba(59, 130, 246, 0.05);
-    transition: all 0.3s ease;
+    transition: all var(--transition-duration) ease;
 }
 
 .dark .skill-item {
@@ -112,20 +130,4 @@
 
 .dark .skill-item:hover {
     background: rgba(59, 130, 246, 0.05);
-}
-
-#theme-toggle {
-    transition: all 0.3s ease;
-}
-
-#moon-icon, #sun-icon {
-    transition: all 0.3s ease;
-}
-
-.dark #moon-icon {
-    display: block;
-}
-
-.dark #sun-icon {
-    display: none;
 }
