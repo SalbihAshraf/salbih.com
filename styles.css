@@ -18,6 +18,15 @@ body {
     color: #f3f4f6;
 }
 
+.dark .hero-text {
+    color: white;
+}
+
+.hero-text {
+    transition: color var(--transition-duration) ease;
+}
+
+
 /* Theme toggle button */
 #theme-toggle {
     cursor: pointer;
