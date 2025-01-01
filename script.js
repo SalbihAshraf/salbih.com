@@ -34,16 +34,16 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             title: "SalbihGame Revamped",
             description: "Salbih tackles a new game dev project utilising his knowledge of online tutorials and personal coding expertise",
-            image: "Screenshot 2024-12-29 001234.jpg",
+            image: "salbihgamerevampedimage.jpg",
             tags: ["Godot", "GDScript", "Pixel Art"],
             link: "https://salbih.itch.io/salbihgame-revamped" // Replace with actual link
         },
         {
-            title: "Dungeon Delver",
-            description: "Top-down dungeon crawler with pixel art aesthetics. Implemented custom pathfinding and combat systems.",
-            image: "https://via.placeholder.com/600x400",
+            title: "SalbihGame",
+            description: "Salbih's first game development project. This game loosely follows an online tutorial with some unique properties.",
+            image: "salbihgameimage.jpg",
             tags: ["Godot", "GDScript", "Pixel Art"],
-            link: "https://github.com/yourusername/dungeon-delver" // Replace with actual link
+            link: "https://salbih.itch.io/salbihgame" // Replace with actual link
         },
         {
             title: "Speed Racer VR",
