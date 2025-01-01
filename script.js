@@ -57,11 +57,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Skills data
     const skills = [
-        "Unity Game Development",
-        "Unreal Engine",
-        "C# & C++ Programming",
-        "3D Modeling & Animation",
-        "Game Design & Level Design",
+        "Python Programming",
+        "Linux Tools and Admin",
+        "Knowledge of common programming languages",
+        "Godot Game Engine",
+        "Pixel Artist",
         "Version Control (Git)",
     ];
 
