@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Theme toggle setup
     const themeToggleBtn = document.getElementById('theme-toggle');
     const sunIcon = document.getElementById('sun-icon');
     const moonIcon = document.getElementById('moon-icon');
