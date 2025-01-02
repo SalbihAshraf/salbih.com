@@ -46,12 +46,13 @@ document.addEventListener('DOMContentLoaded', function() {
             link: "https://salbih.itch.io/salbihgame" // Replace with actual link
         },
         {
-            title: "Speed Racer VR",
-            description: "Virtual reality racing game with realistic physics and multiplayer support. Built for Meta Quest.",
+            title: "[Untitled SalbihGame game]",
+            description: "Some description of Salbih's next  game",
             image: "https://via.placeholder.com/600x400",
-            tags: ["Unreal Engine", "C++", "VR"],
-            link: "https://github.com/yourusername/speed-racer-vr" // Replace with actual link
+            tags: [],
+            link: "https://github.com/SalbihAshraf" // Replace with actual link
         }
+        
     ];
 
     // Skills data
